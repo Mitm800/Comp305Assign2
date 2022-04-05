@@ -5,6 +5,8 @@ using UnityEngine;
 public class BouncingPlatform : MonoBehaviour
 {
     public float bounce = 20.0f;
+
+
     private void OnCollisionEnter2D(Collision2D collider)
     {
         if(collider.gameObject.CompareTag("Player")) {

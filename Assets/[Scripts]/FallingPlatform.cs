@@ -22,7 +22,6 @@ public class FallingPlatform : MonoBehaviour
             Vector3 newPosition = Random.insideUnitSphere * (shakeIntensity * Time.deltaTime);
             newPosition.x += transform.position.x;
             newPosition.y += transform.position.y;
-            //newPosition.y = transform.position.y;
             newPosition.z = transform.position.z;
 
             transform.position = newPosition;
